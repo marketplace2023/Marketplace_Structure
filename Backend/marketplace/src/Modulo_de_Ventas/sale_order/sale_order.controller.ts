@@ -81,3 +81,18 @@ export class SaleOrderController {
 
 //analisis-tendencias-compra-categoria                           # (sale.order, product.category)
 //# Realiza un análisis de las tendencias de compra por categoría de productos.
+
+//seguimiento-ordenes-venta                                                     # (public.sale_order)
+//# Realiza el seguimiento de las órdenes de venta realizadas por los usuarios.
+
+//configuracion-ordenes-venta                                                    # (public.sale_order)
+//# Configura los parámetros relacionados con las órdenes de venta en la aplicación.
+
+//analisis-ordenes-venta                                                         # (public.sale_order)
+//# Proporciona análisis sobre las órdenes de venta realizadas por los usuarios.
+
+//registro-ordenes-venta                                                        # (public.sale_order)
+//# Registra las órdenes de venta realizadas por los clientes.
+
+//analisis-ventas                                                               # (public.sale_order)
+//# Proporciona análisis sobre las órdenes de venta realizadas por los clientes.
