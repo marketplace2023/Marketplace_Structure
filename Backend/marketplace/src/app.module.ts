@@ -81,6 +81,17 @@ import { IrActServerModule } from './Modulo_de_Favoritos/ir_act_server/ir_act_se
 import { IrActWindowsModule } from './Modulo_de_Favoritos/ir_act_windows/ir_act_windows.module';
 import { IrModelModule } from './Modulo_de_Favoritos/ir_model/ir_model.module';
 import { IrUiMenuModule } from './Modulo_de_Favoritos/ir_ui_menu/ir_ui_menu.module';
+import { CrmLeadModule } from './Módulo_de_CRM/crm_lead/crm_lead.module';
+import { CrmStageModule } from './Módulo_de_CRM/crm_stage/crm_stage.module';
+import { CrmTagModule } from './Módulo_de_CRM/crm_tag/crm_tag.module';
+import { CrmTeamModule } from './Módulo_de_CRM/crm_team/crm_team.module';
+import { SaleOrderCancelModule } from './Modulo_de_Ordenes_Venta/sale_order_cancel/sale_order_cancel.module';
+import { SaleOrderDiscountModule } from './Modulo_de_Ordenes_Venta/sale_order_discount/sale_order_discount.module';
+import { SaleOrderLineInvoiceRelModule } from './Modulo_de_Ordenes_Venta/sale_order_line_invoice_rel/sale_order_line_invoice_rel.module';
+import { SaleOrderOptionModule } from './Modulo_de_Ordenes_Venta/sale_order_option/sale_order_option.module';
+import { SaleOrderTemplateModule } from './Modulo_de_Ordenes_Venta/sale_order_template/sale_order_template.module';
+import { SaleOrderTemplateOptionModule } from './Modulo_de_Ordenes_Venta/sale_order_template_option/sale_order_template_option.module';
+import { AccountInvoiceTransactionRelModule } from './Modulo_de_Facturas/account_invoice_transaction_rel/account_invoice_transaction_rel.module';
 @Module({
   imports: [
     ResUsersModule,
@@ -164,6 +175,18 @@ import { IrUiMenuModule } from './Modulo_de_Favoritos/ir_ui_menu/ir_ui_menu.modu
     IrActWindowsModule,
     IrModelModule,
     IrUiMenuModule,
+    CrmLeadModule,
+    CrmStageModule,
+    CrmTagModule,
+    CrmTeamModule,
+    SaleOrderCancelModule,
+    SaleOrderDiscountModule,
+    SaleOrderLineInvoiceRelModule,
+    SaleOrderOptionModule,
+    SaleOrderTemplateModule,
+    SaleOrderTemplateOptionModule,
+    AccountInvoiceTransactionRelModule,
+    AccountMoveLineModule,
   ],
   controllers: [AppController],
   providers: [AppService],
