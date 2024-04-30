@@ -1,1 +1,16 @@
-export class CreateSaleOrderTemplateOptionDto {}
+import { Exclude, Expose } from 'class-transformer';
+
+@Exclude()
+export class SaleOrderTemplateOptionDto {
+  @Expose()
+  public id: number;
+
+  @Expose()
+  public name: string;
+
+  // Agrega más propiedades según sea necesario para el DTO
+
+  constructor(data: Partial<SaleOrderTemplateOptionDto>) {
+    Object.assign(this, data);
+  }
+}

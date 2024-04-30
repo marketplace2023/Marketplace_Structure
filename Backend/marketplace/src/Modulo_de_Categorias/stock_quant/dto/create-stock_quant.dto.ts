@@ -1,1 +1,16 @@
-export class CreateStockQuantDto {}
+import { Exclude, Expose } from 'class-transformer';
+
+@Exclude()
+export class StockQuantDto {
+  @Expose()
+  public id: number;
+
+  @Expose()
+  public name: string;
+
+  // Agrega más propiedades según sea necesario para el DTO
+
+  constructor(data: Partial<StockQuantDto>) {
+    Object.assign(this, data);
+  }
+}

@@ -1,1 +1,16 @@
-export class CreateCrmTeamDto {}
+import { Exclude, Expose } from 'class-transformer';
+
+@Exclude()
+export class CrmTeamDto {
+  @Expose()
+  public id: number;
+
+  @Expose()
+  public name: string;
+
+  // Agrega más propiedades según sea necesario para el DTO
+
+  constructor(data: Partial<CrmTeamDto>) {
+    Object.assign(this, data);
+  }
+}

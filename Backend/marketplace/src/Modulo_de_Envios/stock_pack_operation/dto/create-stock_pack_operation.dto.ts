@@ -1,1 +1,16 @@
-export class CreateStockPackOperationDto {}
+import { Exclude, Expose } from 'class-transformer';
+
+@Exclude()
+export class StockPackOperationDto {
+  @Expose()
+  public id: number;
+
+  @Expose()
+  public name: string;
+
+  // Agrega más propiedades según sea necesario para el DTO
+
+  constructor(data: Partial<StockPackOperationDto>) {
+    Object.assign(this, data);
+  }
+}
